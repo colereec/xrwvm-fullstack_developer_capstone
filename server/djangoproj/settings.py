@@ -31,8 +31,11 @@ DEBUG = True
 # ALLOWED_HOSTS=['localhost','https://reecedavidco-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 # CSRF_TRUSTED_ORIGINS=['https://reecedavidco-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 
-ALLOWED_HOSTS=['*']
-CSRF_TRUSTED_ORIGINS=['*']
+#ALLOWED_HOSTS=['*']
+#CSRF_TRUSTED_ORIGINS=['*']
+
+ALLOWED_HOSTS=['localhost','https://*.cognitiveclass.ai']
+CSRF_TRUSTED_ORIGINS=['https://*.cognitiveclass.ai']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
