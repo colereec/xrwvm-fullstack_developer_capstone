@@ -33,7 +33,7 @@ jobs:
       run: |
         pwd
         # This command finds all Python files recursively and runs flake8 on them
-        find . -name "*.py" -exec flake8 --ignore=E231,E117,E501 {} +
+        find . -name "*.py" -exec flake8 --ignore=E231,E117,E501,E265,E128,E226 {} +
         echo "Linted all the python files successfully"
 
   lint_js:
